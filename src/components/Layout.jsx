@@ -69,10 +69,10 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/5 bg-ink/90 backdrop-blur-md">
-      <div className="mx-auto flex h-18 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
-        <Link to="/" className="flex items-center gap-2.5" aria-label="Eblood home">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:h-23 sm:px-6">
+        <Link to="/" className="flex shrink-0 items-center gap-2.5" aria-label="Eblood home">
           <Logo />
-          <span className="text-xl font-extrabold tracking-wider">EBLOOD</span>
+          <span className="text-xl font-extrabold tracking-wider sm:text-2xl">EBLOOD</span>
         </Link>
 
         <nav aria-label="Main" className="hidden md:block">
@@ -134,8 +134,8 @@ export function Footer() {
     <footer className="border-t border-line bg-black/40 px-4 pt-16 pb-28 sm:px-6">
       <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
         <div className="flex flex-col gap-5">
-          <Link to="/" className="flex items-center gap-2.5" aria-label="Eblood home">
-            <Logo />
+          <Link to="/" className="flex items-center gap-2.5 self-start" aria-label="Eblood home">
+            <Logo className="h-16 w-auto" />
             <span className="text-xl font-extrabold tracking-wider">EBLOOD</span>
           </Link>
           <p className="max-w-sm leading-relaxed text-muted">Pakistan's first AI-powered blood donation app. Connecting donors and patients instantly through smart, location-based technology.</p>

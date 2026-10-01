@@ -4,13 +4,8 @@ import { spotlight } from '../lib/interaction'
 
 export const spring = { type: 'spring', stiffness: 260, damping: 26 }
 
-export function Logo({ className = 'size-9' }) {
-  return (
-    <svg viewBox="0 0 32 32" className={className} aria-hidden="true">
-      <path d="M16 2S5 14 5 20.5a11 11 0 0 0 22 0C27 14 16 2 16 2z" fill="var(--color-blood)" />
-      <path d="M16 12l-5 2v4c0 3.4 2.2 5.4 5 6 2.8-.6 5-2.6 5-6v-4l-5-2z" fill="none" stroke="#fff" strokeWidth="1.8" strokeLinejoin="round" />
-    </svg>
-  )
+export function Logo({ className = 'h-15 w-auto sm:h-18' }) {
+  return <img src="/images/e-blood.png" alt="" width="428" height="640" className={className} draggable="false" />
 }
 
 export function Reveal({ children, delay = 0, className, as = 'div' }) {

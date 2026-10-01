@@ -32,9 +32,9 @@ export const TICKER = [
 ]
 
 export const STATS = [
-  { value: 2000, suffix: '+', label: 'Registered donors', icon: Users },
-  { value: 220, suffix: '+', label: 'Lives saved', icon: Heart },
-  { value: 5, suffix: '+', label: 'Blood camps', icon: Tent },
+  { value: 5000, suffix: '+', label: 'Registered donors', icon: Users },
+  { value: 450, suffix: '+', label: 'Blood donations', icon: Heart },
+  { value: 10, suffix: '+', label: 'Blood camps', icon: Tent },
 ]
 
 export const FEATURES = [

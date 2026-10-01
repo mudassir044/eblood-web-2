@@ -70,11 +70,11 @@ export function Hero() {
 
           {/* Intent split: route the two audiences in one tap */}
           <Reveal delay={0.15} className="grid w-full gap-3 sm:grid-cols-2">
-            <Magnetic as="button" onClick={openEmergency} strength={0.15} className="group flex min-h-20 items-center gap-4 rounded-2xl bg-blood px-5 text-start text-white shadow-xl shadow-blood/30 hover:bg-blood-deep">
-              <Siren className="size-7 shrink-0" aria-hidden="true" />
+            <Magnetic href={LINKS.playStore} target="_blank" rel="noopener" strength={0.15} className="group flex min-h-20 items-center gap-4 rounded-2xl bg-blood px-5 text-start text-white shadow-xl shadow-blood/30 hover:bg-blood-deep">
+              <Download className="size-7 shrink-0" aria-hidden="true" />
               <span>
-                <span className="block text-lg font-extrabold">I need blood</span>
-                <span className="block text-sm text-white/85">Guided help in 3 taps</span>
+                <span className="block text-lg font-extrabold">Download on Google Play</span>
+                <span className="block text-sm text-white/85">Get the Eblood app</span>
               </span>
             </Magnetic>
             <Magnetic href="#ready" strength={0.15} className="flex min-h-20 items-center gap-4 rounded-2xl border border-line bg-surface/70 px-5 hover:border-blood/60">
@@ -87,10 +87,10 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={0.2}>
-            <a href={LINKS.playStore} target="_blank" rel="noopener" className="inline-flex min-h-11 items-center gap-2 font-semibold text-soft underline-offset-4 hover:text-fg hover:underline">
-              <Download className="size-4" aria-hidden="true" />
-              Download on Google Play
-            </a>
+            <button onClick={openEmergency} className="inline-flex min-h-11 items-center gap-2 font-semibold text-soft underline-offset-4 hover:text-fg hover:underline">
+              <Siren className="size-4" aria-hidden="true" />
+              I need blood
+            </button>
           </Reveal>
 
           <Reveal delay={0.25} as="dl" className="grid w-full max-w-lg grid-cols-3 gap-6 border-t border-line pt-7">

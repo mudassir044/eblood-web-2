@@ -81,7 +81,7 @@ export const PARTNERS = [
   { name: 'Fatimid Foundation', src: '/images/fatimid-foundation.jpg' },
   { name: 'Jamila Sultana Foundation', src: '/images/jamila-sultana-foundation.jpg' },
   { name: 'PM Youth Programme', src: '/images/prime-miniters-youth-prog.jpg' },
-  { name: 'SAM Life Savers', src: '/images/sam-life-savers.jpg' },
+  { name: 'SAM Life Savers', src: '/images/sam-life-savers.jpg', href: 'https://www.samlifesavers.org/' },
   { name: 'Crisp n Spice', src: '/images/crisp-and-spice.jpg' },
 ]
 

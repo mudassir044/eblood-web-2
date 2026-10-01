@@ -311,7 +311,13 @@ export function Partners() {
             <motion.div whileHover={{ y: -6, rotate: -1.5 }} transition={spring} className="flex aspect-square w-full items-center justify-center rounded-3xl bg-white p-4">
               <img src={p.src} alt={`${p.name} logo`} loading="lazy" className="size-full object-contain" />
             </motion.div>
-            <span className="text-center text-sm font-semibold text-soft">{p.name}</span>
+            {p.href ? (
+              <a href={p.href} target="_blank" rel="noopener" className="text-center text-sm font-semibold text-soft underline-offset-4 hover:text-fg hover:underline">
+                {p.name}
+              </a>
+            ) : (
+              <span className="text-center text-sm font-semibold text-soft">{p.name}</span>
+            )}
           </Reveal>
         ))}
       </ul>

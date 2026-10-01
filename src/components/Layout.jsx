@@ -185,7 +185,11 @@ export function Footer() {
           © {new Date().getFullYear()} Eblood. All rights reserved. Made with <Heart className="inline size-4 -translate-y-px fill-blood text-blood" aria-label="love" /> in Pakistan
         </p>
         <p className="text-center sm:text-right">
-          Developed by Muhammad Mudassir, Co-Founder &amp; CTO, SAM Life Savers <span className="mx-2 text-line">|</span> <span className="font-semibold text-blood-soft">#EbloodCares</span>
+          Developed by Muhammad Mudassir, Co-Founder &amp; CTO,{' '}
+          <a href="https://www.samlifesavers.org/" target="_blank" rel="noopener" className="font-semibold text-soft underline-offset-4 hover:text-fg hover:underline">
+            SAM Life Savers
+          </a>{' '}
+          <span className="mx-2 text-line">|</span> <span className="font-semibold text-blood-soft">#EbloodCares</span>
         </p>
       </div>
     </footer>
